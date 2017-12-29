@@ -1,0 +1,31 @@
+D:\Anul3\baze de date\projectbaze\projectbaze\bin\Debug\projectbaze.exe
+D:\Anul3\baze de date\projectbaze\projectbaze\bin\Debug\projectbaze.exe.config
+D:\Anul3\baze de date\projectbaze\projectbaze\obj\Debug\projectbaze.Form1.resources
+D:\Anul3\baze de date\projectbaze\projectbaze\obj\Debug\projectbaze.Inregistrare.resources
+D:\Anul3\baze de date\projectbaze\projectbaze\obj\Debug\projectbaze.Properties.Resources.resources
+D:\Anul3\baze de date\projectbaze\projectbaze\obj\Debug\projectbaze.csproj.GenerateResource.Cache
+D:\Anul3\baze de date\projectbaze\projectbaze\obj\Debug\projectbaze.exe
+D:\Anul3\baze de date\projectbaze\projectbaze\obj\Debug\projectbaze.pdb
+D:\Anul3\baze de date\projectbaze\projectbaze\bin\Debug\projectbaze.pdb
+D:\Anul3\baze de date\projectbaze\projectbaze\obj\Debug\projectbaze.Main.resources
+D:\Anul3\baze de date\projectbaze\projectbaze\obj\Debug\projectbaze.ptlaptopuri.resources
+D:\Anul3\baze de date\projectbaze\projectbaze\obj\Debug\projectbaze.pttablete.resources
+D:\Anul3\baze de date\projectbaze\projectbaze\obj\Debug\projectbaze.tablete.resources
+D:\Anul3\baze de date\projectbaze\projectbaze\obj\Debug\projectbaze.csprojResolveAssemblyReference.cache
+C:\baze-master\projectbaze\bin\Debug\projectbaze.exe.config
+C:\baze-master\projectbaze\obj\Debug\projectbaze.exe
+C:\baze-master\projectbaze\obj\Debug\projectbaze.pdb
+C:\baze-master\projectbaze\obj\Debug\projectbaze.csprojResolveAssemblyReference.cache
+C:\baze-master\projectbaze\obj\Debug\projectbaze.Form1.resources
+C:\baze-master\projectbaze\obj\Debug\projectbaze.Inregistrare.resources
+C:\baze-master\projectbaze\obj\Debug\projectbaze.Main.resources
+C:\baze-master\projectbaze\obj\Debug\projectbaze.Properties.Resources.resources
+C:\baze-master\projectbaze\obj\Debug\projectbaze.ptlaptopuri.resources
+C:\baze-master\projectbaze\obj\Debug\projectbaze.pttablete.resources
+C:\baze-master\projectbaze\obj\Debug\projectbaze.tablete.resources
+C:\baze-master\projectbaze\obj\Debug\projectbaze.csproj.GenerateResource.Cache
+C:\baze-master\projectbaze\bin\Debug\projectbaze.exe
+C:\baze-master\projectbaze\bin\Debug\projectbaze.pdb
+D:\Anul3\baze de date\clone\projectbaze\bin\Debug\projectbaze.exe.config
+D:\Anul3\baze de date\clone\projectbaze\obj\Debug\projectbaze.exe
+D:\Anul3\baze de date\clone\projectbaze\obj\Debug\projectbaze.pdb

@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="magazin" Class="DataClasses2DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-7H7NE9T\ALEX;Initial Catalog=magazin;Integrated Security=True" SettingsObjectName="projectbaze.Properties.Settings" SettingsPropertyName="magazinConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Categorie" Member="Categories">
+    <Type Name="Categorie">
+      <Column Name="ID_categorie" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Nume" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Association Name="Categorie_Produse" Member="Produses" ThisKey="ID_categorie" OtherKey="Categorie_id" Type="Produse" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Comenzi" Member="Comenzis">
+    <Type Name="Comenzi">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="user_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="shipper_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Comenzi_CosCumparaturi" Member="CosCumparaturis" ThisKey="id" OtherKey="id_cumparare" Type="CosCumparaturi" />
+      <Association Name="Useri_Comenzi" Member="Useri" ThisKey="user_id" OtherKey="ID" Type="Useri" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CosCumparaturi" Member="CosCumparaturis">
+    <Type Name="CosCumparaturi">
+      <Column Name="id_cumparare" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="id_produs" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="numar_produse" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="suma" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Comenzi_CosCumparaturi" Member="Comenzi" ThisKey="id_cumparare" OtherKey="id" Type="Comenzi" IsForeignKey="true" />
+      <Association Name="Produse_CosCumparaturi" Member="Produse" ThisKey="id_produs" OtherKey="Id_produs" Type="Produse" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Produse" Member="Produses">
+    <Type Name="Produse">
+      <Column Name="Id_produs" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Nume" Type="System.String" DbType="NChar(50)" CanBeNull="true" />
+      <Column Name="Pret" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Descriere" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Cantitate" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Categorie_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Produse_CosCumparaturi" Member="CosCumparaturis" ThisKey="Id_produs" OtherKey="id_produs" Type="CosCumparaturi" />
+      <Association Name="Categorie_Produse" Member="Categorie" ThisKey="Categorie_id" OtherKey="ID_categorie" Type="Categorie" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Useri" Member="Useris">
+    <Type Name="Useri">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Username" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="Parola" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="email" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="adresa" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="Administrator" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="Telefon" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Association Name="Useri_Comenzi" Member="Comenzis" ThisKey="ID" OtherKey="user_id" Type="Comenzi" />
+    </Type>
+  </Table>
+</Database>
